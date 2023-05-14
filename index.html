@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <div class="btn-container">
+          <button class="change-btn" id="btn-id-countdown">Countdown</button>
+          <button class="change-btn" id="btn-id-stopwatch">StopWatch</button>
+        </div>
+        <div class="title">
+          <h1>Countdown Timer</h1>
+        </div>
+        <div class="subtitle">
+          <h2 class="subtitle-text">hours</h2>
+          <h2 class="subtitle-text">minutes</h2>
+          <h2 class="subtitle-text">seconds</h2>
+        </div>
+        <div class="timer-box">
+          <div class="hour-box">
+            <input
+              type="number"
+              name=""
+              id="hour"
+              class="class-hour same-box"
+              oninput="this.value=this.value.slice(0,this.maxLength)"
+              maxlength="2"
+              placeholder="00"
+            />
+          </div>
+          <span class="divider">:</span>
+          <div class="min-box">
+            <input
+              type="number"
+              id="min"
+              placeholder="00"
+              oninput="this.value=this.value.slice(0,this.maxLength)"
+              maxlength="2"
+              class="class-min same-box"
+            />
+          </div>
+          <span class="divider">:</span>
+          <div class="sec-box">
+            <input
+              type="number"
+              id="sec"
+              placeholder="00"
+              oninput="this.value=this.value.slice(0,2)"
+              class="class-sec same-box"
+            />
+          </div>
+        </div>
+        <div class="btn">
+          <button class="same-btn" id="start">Start</button>
+          <button class="same-btn" id="pause">Pause</button>
+          <button class="same-btn" id="continue">Continue</button>
+          <button class="same-btn" id="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
