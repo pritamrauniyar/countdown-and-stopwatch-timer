@@ -88,3 +88,17 @@ input::-webkit-inner-spin-button {
   color: white;
   background-color: orangered;
 }
+
+@media screen and (max-width: 480px) {
+  .container {
+    height: 60vh;
+    width: 100%;
+  }
+  .same-box {
+    width: 110px;
+    margin: 5px;
+  }
+  .same-btn {
+    width: 180px;
+  }
+}
